@@ -58,6 +58,7 @@ namespace Standard {
                         ByteArray *array = va_arg(ap, ByteArray *);
                         String::ValueOfByteArray(m_writer.m_buffer + size, array);
                         size += array->Size * 3;
+                        format += 2;
                     }
                         break;
                     default:
