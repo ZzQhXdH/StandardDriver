@@ -3,4 +3,4 @@ project(StandardDriver)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(StandardDriver main.cpp Standard/Memory.h Standard/Memory.cpp)
+add_executable(StandardDriver main.cpp Standard/Memory.h Standard/Memory.cpp Standard/String.cpp Standard/String.h Standard/TemplateUtil.h Standard/Format.h Standard/ByteArray.h)

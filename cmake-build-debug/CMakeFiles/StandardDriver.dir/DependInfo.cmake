@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/C-C++/StandardDriver/Standard/Com/Memory.cpp" "D:/C-C++/StandardDriver/cmake-build-debug/CMakeFiles/StandardDriver.dir/Standard/Com/Memory.cpp.obj"
+  "D:/C-C++/StandardDriver/Standard/Memory.cpp" "D:/C-C++/StandardDriver/cmake-build-debug/CMakeFiles/StandardDriver.dir/Standard/Memory.cpp.obj"
+  "D:/C-C++/StandardDriver/Standard/String.cpp" "D:/C-C++/StandardDriver/cmake-build-debug/CMakeFiles/StandardDriver.dir/Standard/String.cpp.obj"
   "D:/C-C++/StandardDriver/main.cpp" "D:/C-C++/StandardDriver/cmake-build-debug/CMakeFiles/StandardDriver.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

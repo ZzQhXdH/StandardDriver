@@ -69,34 +69,49 @@ CMakeFiles/StandardDriver.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StandardDriver.dir/main.cpp.s"
 	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\C-C++\StandardDriver\main.cpp -o CMakeFiles\StandardDriver.dir\main.cpp.s
 
-CMakeFiles/StandardDriver.dir/Standard/Com/Memory.cpp.obj: CMakeFiles/StandardDriver.dir/flags.make
-CMakeFiles/StandardDriver.dir/Standard/Com/Memory.cpp.obj: ../Standard/Com/Memory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\C-C++\StandardDriver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/StandardDriver.dir/Standard/Com/Memory.cpp.obj"
-	D:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\StandardDriver.dir\Standard\Com\Memory.cpp.obj -c D:\C-C++\StandardDriver\Standard\Com\Memory.cpp
+CMakeFiles/StandardDriver.dir/Standard/Memory.cpp.obj: CMakeFiles/StandardDriver.dir/flags.make
+CMakeFiles/StandardDriver.dir/Standard/Memory.cpp.obj: ../Standard/Memory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\C-C++\StandardDriver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/StandardDriver.dir/Standard/Memory.cpp.obj"
+	D:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\StandardDriver.dir\Standard\Memory.cpp.obj -c D:\C-C++\StandardDriver\Standard\Memory.cpp
 
-CMakeFiles/StandardDriver.dir/Standard/Com/Memory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StandardDriver.dir/Standard/Com/Memory.cpp.i"
-	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\C-C++\StandardDriver\Standard\Com\Memory.cpp > CMakeFiles\StandardDriver.dir\Standard\Com\Memory.cpp.i
+CMakeFiles/StandardDriver.dir/Standard/Memory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StandardDriver.dir/Standard/Memory.cpp.i"
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\C-C++\StandardDriver\Standard\Memory.cpp > CMakeFiles\StandardDriver.dir\Standard\Memory.cpp.i
 
-CMakeFiles/StandardDriver.dir/Standard/Com/Memory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StandardDriver.dir/Standard/Com/Memory.cpp.s"
-	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\C-C++\StandardDriver\Standard\Com\Memory.cpp -o CMakeFiles\StandardDriver.dir\Standard\Com\Memory.cpp.s
+CMakeFiles/StandardDriver.dir/Standard/Memory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StandardDriver.dir/Standard/Memory.cpp.s"
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\C-C++\StandardDriver\Standard\Memory.cpp -o CMakeFiles\StandardDriver.dir\Standard\Memory.cpp.s
+
+CMakeFiles/StandardDriver.dir/Standard/String.cpp.obj: CMakeFiles/StandardDriver.dir/flags.make
+CMakeFiles/StandardDriver.dir/Standard/String.cpp.obj: ../Standard/String.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\C-C++\StandardDriver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/StandardDriver.dir/Standard/String.cpp.obj"
+	D:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\StandardDriver.dir\Standard\String.cpp.obj -c D:\C-C++\StandardDriver\Standard\String.cpp
+
+CMakeFiles/StandardDriver.dir/Standard/String.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StandardDriver.dir/Standard/String.cpp.i"
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\C-C++\StandardDriver\Standard\String.cpp > CMakeFiles\StandardDriver.dir\Standard\String.cpp.i
+
+CMakeFiles/StandardDriver.dir/Standard/String.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StandardDriver.dir/Standard/String.cpp.s"
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\C-C++\StandardDriver\Standard\String.cpp -o CMakeFiles\StandardDriver.dir\Standard\String.cpp.s
 
 # Object files for target StandardDriver
 StandardDriver_OBJECTS = \
 "CMakeFiles/StandardDriver.dir/main.cpp.obj" \
-"CMakeFiles/StandardDriver.dir/Standard/Com/Memory.cpp.obj"
+"CMakeFiles/StandardDriver.dir/Standard/Memory.cpp.obj" \
+"CMakeFiles/StandardDriver.dir/Standard/String.cpp.obj"
 
 # External object files for target StandardDriver
 StandardDriver_EXTERNAL_OBJECTS =
 
 StandardDriver.exe: CMakeFiles/StandardDriver.dir/main.cpp.obj
-StandardDriver.exe: CMakeFiles/StandardDriver.dir/Standard/Com/Memory.cpp.obj
+StandardDriver.exe: CMakeFiles/StandardDriver.dir/Standard/Memory.cpp.obj
+StandardDriver.exe: CMakeFiles/StandardDriver.dir/Standard/String.cpp.obj
 StandardDriver.exe: CMakeFiles/StandardDriver.dir/build.make
 StandardDriver.exe: CMakeFiles/StandardDriver.dir/linklibs.rsp
 StandardDriver.exe: CMakeFiles/StandardDriver.dir/objects1.rsp
 StandardDriver.exe: CMakeFiles/StandardDriver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\C-C++\StandardDriver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable StandardDriver.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\C-C++\StandardDriver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable StandardDriver.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\StandardDriver.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

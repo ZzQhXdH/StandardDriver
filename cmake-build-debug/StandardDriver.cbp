@@ -80,10 +80,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/C-C++/StandardDriver/Standard/Com/Memory.cpp">
+		<Unit filename="D:/C-C++/StandardDriver/Standard/ByteArray.h">
 			<Option target="StandardDriver"/>
 		</Unit>
-		<Unit filename="D:/C-C++/StandardDriver/Standard/Com/Memory.h">
+		<Unit filename="D:/C-C++/StandardDriver/Standard/Format.h">
+			<Option target="StandardDriver"/>
+		</Unit>
+		<Unit filename="D:/C-C++/StandardDriver/Standard/Memory.cpp">
+			<Option target="StandardDriver"/>
+		</Unit>
+		<Unit filename="D:/C-C++/StandardDriver/Standard/Memory.h">
+			<Option target="StandardDriver"/>
+		</Unit>
+		<Unit filename="D:/C-C++/StandardDriver/Standard/String.cpp">
+			<Option target="StandardDriver"/>
+		</Unit>
+		<Unit filename="D:/C-C++/StandardDriver/Standard/String.h">
+			<Option target="StandardDriver"/>
+		</Unit>
+		<Unit filename="D:/C-C++/StandardDriver/Standard/TemplateUtil.h">
 			<Option target="StandardDriver"/>
 		</Unit>
 		<Unit filename="D:/C-C++/StandardDriver/main.cpp">

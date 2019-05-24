@@ -122,32 +122,59 @@ StandardDriver/fast:
 	$(MAKE) -f CMakeFiles\StandardDriver.dir\build.make CMakeFiles/StandardDriver.dir/build
 .PHONY : StandardDriver/fast
 
-Standard/Com/Memory.obj: Standard/Com/Memory.cpp.obj
+Standard/Memory.obj: Standard/Memory.cpp.obj
 
-.PHONY : Standard/Com/Memory.obj
+.PHONY : Standard/Memory.obj
 
 # target to build an object file
-Standard/Com/Memory.cpp.obj:
-	$(MAKE) -f CMakeFiles\StandardDriver.dir\build.make CMakeFiles/StandardDriver.dir/Standard/Com/Memory.cpp.obj
-.PHONY : Standard/Com/Memory.cpp.obj
+Standard/Memory.cpp.obj:
+	$(MAKE) -f CMakeFiles\StandardDriver.dir\build.make CMakeFiles/StandardDriver.dir/Standard/Memory.cpp.obj
+.PHONY : Standard/Memory.cpp.obj
 
-Standard/Com/Memory.i: Standard/Com/Memory.cpp.i
+Standard/Memory.i: Standard/Memory.cpp.i
 
-.PHONY : Standard/Com/Memory.i
+.PHONY : Standard/Memory.i
 
 # target to preprocess a source file
-Standard/Com/Memory.cpp.i:
-	$(MAKE) -f CMakeFiles\StandardDriver.dir\build.make CMakeFiles/StandardDriver.dir/Standard/Com/Memory.cpp.i
-.PHONY : Standard/Com/Memory.cpp.i
+Standard/Memory.cpp.i:
+	$(MAKE) -f CMakeFiles\StandardDriver.dir\build.make CMakeFiles/StandardDriver.dir/Standard/Memory.cpp.i
+.PHONY : Standard/Memory.cpp.i
 
-Standard/Com/Memory.s: Standard/Com/Memory.cpp.s
+Standard/Memory.s: Standard/Memory.cpp.s
 
-.PHONY : Standard/Com/Memory.s
+.PHONY : Standard/Memory.s
 
 # target to generate assembly for a file
-Standard/Com/Memory.cpp.s:
-	$(MAKE) -f CMakeFiles\StandardDriver.dir\build.make CMakeFiles/StandardDriver.dir/Standard/Com/Memory.cpp.s
-.PHONY : Standard/Com/Memory.cpp.s
+Standard/Memory.cpp.s:
+	$(MAKE) -f CMakeFiles\StandardDriver.dir\build.make CMakeFiles/StandardDriver.dir/Standard/Memory.cpp.s
+.PHONY : Standard/Memory.cpp.s
+
+Standard/String.obj: Standard/String.cpp.obj
+
+.PHONY : Standard/String.obj
+
+# target to build an object file
+Standard/String.cpp.obj:
+	$(MAKE) -f CMakeFiles\StandardDriver.dir\build.make CMakeFiles/StandardDriver.dir/Standard/String.cpp.obj
+.PHONY : Standard/String.cpp.obj
+
+Standard/String.i: Standard/String.cpp.i
+
+.PHONY : Standard/String.i
+
+# target to preprocess a source file
+Standard/String.cpp.i:
+	$(MAKE) -f CMakeFiles\StandardDriver.dir\build.make CMakeFiles/StandardDriver.dir/Standard/String.cpp.i
+.PHONY : Standard/String.cpp.i
+
+Standard/String.s: Standard/String.cpp.s
+
+.PHONY : Standard/String.s
+
+# target to generate assembly for a file
+Standard/String.cpp.s:
+	$(MAKE) -f CMakeFiles\StandardDriver.dir\build.make CMakeFiles/StandardDriver.dir/Standard/String.cpp.s
+.PHONY : Standard/String.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -185,9 +212,12 @@ help:
 	@echo ... StandardDriver
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Standard/Com/Memory.obj
-	@echo ... Standard/Com/Memory.i
-	@echo ... Standard/Com/Memory.s
+	@echo ... Standard/Memory.obj
+	@echo ... Standard/Memory.i
+	@echo ... Standard/Memory.s
+	@echo ... Standard/String.obj
+	@echo ... Standard/String.i
+	@echo ... Standard/String.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
