@@ -35,5 +35,17 @@ namespace Standard {
         return true;
     }
 
+    bool MemoryEqualsWithAlign4(const void *target1, const void *target2, int32_t size) {
+        size /=  4;
+        auto t1 = static_cast<const uint32_t *>(target1);
+        auto t2 = static_cast<const uint32_t *>(target2);
+        while (size-- > 0) {
+            if (*t1 != *t2) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }
 

@@ -92,6 +92,9 @@
 		<Unit filename="D:/C-C++/StandardDriver/Standard/Cryptography.h">
 			<Option target="StandardDriver"/>
 		</Unit>
+		<Unit filename="D:/C-C++/StandardDriver/Standard/FlashDrv.h">
+			<Option target="StandardDriver"/>
+		</Unit>
 		<Unit filename="D:/C-C++/StandardDriver/Standard/FormatBuilder.h">
 			<Option target="StandardDriver"/>
 		</Unit>
