@@ -7,7 +7,7 @@
 
 namespace Standard {
 
-    template <typename Type>
+    template<typename Type>
     inline void Swap(Type &a, Type &b) {
         Type c = a;
         a = b;
@@ -15,7 +15,6 @@ namespace Standard {
     }
 
 }
-
 
 
 #endif //STANDARDDRIVER_TEMPLATEUTIL_H

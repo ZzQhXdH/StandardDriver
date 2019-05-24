@@ -12,8 +12,8 @@ struct ByteArray {
     int32_t Size;
 
     ByteArray(const void *memory, int32_t size) :
-        Array(static_cast<const uint8_t *>(memory)),
-        Size(size) {
+            Array(static_cast<const uint8_t *>(memory)),
+            Size(size) {
     }
 };
 

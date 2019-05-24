@@ -2,12 +2,11 @@
 // Created by xudehua on 2019-05-24.
 //
 
-#ifndef STANDARDDRIVER_FORMAT_H
-#define STANDARDDRIVER_FORMAT_H
+#ifndef STANDARDDRIVER_FORMATBUILDER_H
+#define STANDARDDRIVER_FORMATBUILDER_H
 
 #include "String.h"
 #include "ByteArray.h"
-#include <stdio.h>
 
 namespace Standard {
 
@@ -15,13 +14,13 @@ namespace Standard {
      * void Lock()
      * void UnLock()
      * m_buffer
-     * void WriteWithBuffer(int32_t)
+     * void WriteAll(const void *, int32_t)
      * @tparam Writer
      */
-    template <typename Writer>
-    class Format {
+    template<typename Writer>
+    class FormatBuilder {
     public:
-        explicit Format(Writer &writer) :
+        explicit FormatBuilder(Writer &writer) :
                 m_writer(writer) {
         }
 
@@ -33,8 +32,8 @@ namespace Standard {
             m_writer.Lock();
             while ((c = *format) != '\0') {
                 if (c != '%') {
-                    m_writer.m_buffer[size ++] = c;
-                    format ++;
+                    m_writer.m_buffer[size++] = c;
+                    format++;
                     continue;
                 }
                 c = *(format + 1);
@@ -63,11 +62,11 @@ namespace Standard {
                         break;
                     default:
                         format += 1;
-                        m_writer.m_buffer[size ++] = '%';
+                        m_writer.m_buffer[size++] = '%';
                         break;
                 }
             }
-            m_writer.WriteWithBuffer(size);
+            m_writer.WriteAll(m_writer.m_buffer, size);
             m_writer.UnLock();
             return size;
         }
@@ -78,5 +77,4 @@ namespace Standard {
 }
 
 
-
-#endif //STANDARDDRIVER_FORMAT_H
+#endif //STANDARDDRIVER_FORMATBUILDER_H

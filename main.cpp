@@ -1,12 +1,15 @@
 #include <iostream>
-#include "Standard/Format.h"
+#include "Standard/FormatBuilder.h"
+#include "Standard/Cryptography.h"
+#include "Standard/ActionBuilder.h"
 
 class StandardOutput {
 
 public:
-    friend class Standard::Format<StandardOutput>;
+    friend class Standard::FormatBuilder<StandardOutput>;
 
-    Standard::Format<StandardOutput> Format;
+    Standard::FormatBuilder<StandardOutput> Format;
+    Standard:
 
     StandardOutput() : Format(*this) {
     }
@@ -19,9 +22,10 @@ public:
         std::cout << "UnLock" << std::endl;
     }
 
-    void WriteWithBuffer(int32_t size) {
+    void WriteAll(const void *p, int32_t size) {
+        auto buffer = static_cast<const uint8_t *>(p);
         for (int32_t i = 0; i < size; i ++) {
-            putchar(m_buffer[i]);
+            putchar(buffer[i]);
         }
     }
 
@@ -31,8 +35,11 @@ private:
 
 int main() {
     StandardOutput output;
-    auto arr = ByteArray("ASDFG", 5);
-    output.Format.format("%s,%d,%x,%s,%d,%b\r\n", "Hello Word", 123, 0x543, "231", -342, &arr);
+    uint8_t dig[16];
+    Standard::MD5Creator("1234567890", 10).Final(dig);
+
+    auto arr = ByteArray(dig, 16);
+    output.Format.format("%b\r\n", &arr);
 
     return 0;
 }

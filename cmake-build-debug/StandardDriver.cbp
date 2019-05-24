@@ -80,10 +80,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/C-C++/StandardDriver/Standard/ActionBuilder.h">
+			<Option target="StandardDriver"/>
+		</Unit>
 		<Unit filename="D:/C-C++/StandardDriver/Standard/ByteArray.h">
 			<Option target="StandardDriver"/>
 		</Unit>
-		<Unit filename="D:/C-C++/StandardDriver/Standard/Format.h">
+		<Unit filename="D:/C-C++/StandardDriver/Standard/Cryptography.cpp">
+			<Option target="StandardDriver"/>
+		</Unit>
+		<Unit filename="D:/C-C++/StandardDriver/Standard/Cryptography.h">
+			<Option target="StandardDriver"/>
+		</Unit>
+		<Unit filename="D:/C-C++/StandardDriver/Standard/FormatBuilder.h">
 			<Option target="StandardDriver"/>
 		</Unit>
 		<Unit filename="D:/C-C++/StandardDriver/Standard/Memory.cpp">

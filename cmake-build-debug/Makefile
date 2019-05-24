@@ -122,6 +122,33 @@ StandardDriver/fast:
 	$(MAKE) -f CMakeFiles\StandardDriver.dir\build.make CMakeFiles/StandardDriver.dir/build
 .PHONY : StandardDriver/fast
 
+Standard/Cryptography.obj: Standard/Cryptography.cpp.obj
+
+.PHONY : Standard/Cryptography.obj
+
+# target to build an object file
+Standard/Cryptography.cpp.obj:
+	$(MAKE) -f CMakeFiles\StandardDriver.dir\build.make CMakeFiles/StandardDriver.dir/Standard/Cryptography.cpp.obj
+.PHONY : Standard/Cryptography.cpp.obj
+
+Standard/Cryptography.i: Standard/Cryptography.cpp.i
+
+.PHONY : Standard/Cryptography.i
+
+# target to preprocess a source file
+Standard/Cryptography.cpp.i:
+	$(MAKE) -f CMakeFiles\StandardDriver.dir\build.make CMakeFiles/StandardDriver.dir/Standard/Cryptography.cpp.i
+.PHONY : Standard/Cryptography.cpp.i
+
+Standard/Cryptography.s: Standard/Cryptography.cpp.s
+
+.PHONY : Standard/Cryptography.s
+
+# target to generate assembly for a file
+Standard/Cryptography.cpp.s:
+	$(MAKE) -f CMakeFiles\StandardDriver.dir\build.make CMakeFiles/StandardDriver.dir/Standard/Cryptography.cpp.s
+.PHONY : Standard/Cryptography.cpp.s
+
 Standard/Memory.obj: Standard/Memory.cpp.obj
 
 .PHONY : Standard/Memory.obj
@@ -212,6 +239,9 @@ help:
 	@echo ... StandardDriver
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Standard/Cryptography.obj
+	@echo ... Standard/Cryptography.i
+	@echo ... Standard/Cryptography.s
 	@echo ... Standard/Memory.obj
 	@echo ... Standard/Memory.i
 	@echo ... Standard/Memory.s
